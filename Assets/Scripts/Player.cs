@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 
     void FireRaycast()
     {
-        enemiesInSight = new HashSet<Enemy>(); //thx JunHang
+        enemiesInSight = new HashSet<Enemy>(); //thx JunHang    
         for (int i = 0; i < rayCount; i++)
         {
             float angle = viewAngle * ((float)i / (rayCount - 1) - 0.5f);  // Calculate angle for each ray

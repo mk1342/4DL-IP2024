@@ -27,6 +27,9 @@ public class Player : MonoBehaviour
     {
         // Initialize the list of enemies
         enemies = new List<Enemy>(FindObjectsOfType<Enemy>());
+        progressBar.gameObject.SetActive(false);
+        interactText.enabled = false;
+        messageText.enabled = false;
     }
     void Update()
     {

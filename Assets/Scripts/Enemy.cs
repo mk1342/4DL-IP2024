@@ -27,7 +27,6 @@ public class Enemy : MonoBehaviour
     public void SetMovement(bool value)
     {
         isMoving = value;
-        Debug.Log(isMoving);
     }
 
 }

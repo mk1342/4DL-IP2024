@@ -70,6 +70,6 @@ public class Keypad : MonoBehaviour
 
     void Sound()
     {
-        AudioManager.Instance.PlaySfx("Button", audioSource);
+        //AudioManager.Instance.PlaySfx("Button", audioSource);
     }
 }

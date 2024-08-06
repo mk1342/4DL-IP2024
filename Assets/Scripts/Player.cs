@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
@@ -20,7 +21,7 @@ public class Player : MonoBehaviour
 
     public TextMeshProUGUI messageText;
     public TextMeshProUGUI interactText;
-    public Slider progressBar;
+    public UnityEngine.UI.Slider progressBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -93,7 +94,7 @@ public class Player : MonoBehaviour
                 }
                 if (Input.GetKey(KeyCode.E))
                 {
-                    //progressBar.gameObject.SetActive(true);
+                    progressBar.gameObject.SetActive(true);
                     holdTime += Time.deltaTime;
                     progressBar.value = holdTime / holdDuration;
                     if (holdTime >= holdDuration)
@@ -101,7 +102,7 @@ public class Player : MonoBehaviour
                         door.Open();
                         StartCoroutine(ResetCooldown());
                         holdTime = 0f; // Reset the hold time after opening the door
-                        //progressBar.gameObject.SetActive(false);
+                         progressBar.gameObject.SetActive(false);
                         interactText.enabled = false;
 
                     }
@@ -109,7 +110,7 @@ public class Player : MonoBehaviour
                 else
                 {
                     holdTime = 0f; // Reset the hold time if the button is released
-                    //progressBar.gameObject.SetActive(false);
+                    progressBar.gameObject.SetActive(false);
                 }
             }
             else if (!onCooldown)
@@ -129,7 +130,7 @@ public class Player : MonoBehaviour
         KeypadButtons button = hit.transform.GetComponent<KeypadButtons>();
         if (button)
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.Mouse0))
             {
                 button.Interact();
             }

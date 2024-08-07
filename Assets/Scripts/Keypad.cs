@@ -13,12 +13,17 @@ public class Keypad : MonoBehaviour
     public int numOfDigits = 4;
     public string correctCode;
     public TextMeshPro[] digitTexts;
+    private int numDisplay;
 
     private string inputCode = "";
     private AudioSource audioSource;
     public bool solved = false;
+
+    private List<int> codeDisplayIndices = new List<int>();
+    private List<string> codeCoordinates = new List<string>(); // To store coordinates (or indices) of code digits
     private void Start()
     {
+        numDisplay = digitTexts.Length;
         door.SetLock(true);
         if (isRandom)
         {
@@ -40,6 +45,37 @@ public class Keypad : MonoBehaviour
 
     void AssignCodeToUIText()
     {
+        if (numOfDigits < numDisplay)
+        {
+            System.Random rand = new System.Random();
+            HashSet<int> usedIndices = new HashSet<int>();
+
+            // Assign each digit of the code to a random TextMeshPro display
+            for (int i = 0; i < numOfDigits; i++)
+            {
+                int index;
+                do
+                {
+                    index = rand.Next(numDisplay);
+                } while (usedIndices.Contains(index));
+                usedIndices.Add(index);
+                digitTexts[index].text = correctCode[i].ToString();
+
+                // Store the index and coordinates of the assigned digit
+                codeDisplayIndices.Add(index);
+                codeCoordinates.Add("A1"); // Assuming a 6x6 grid
+            }
+
+            // Assign random digits to the remaining TextMeshPro displays
+            for (int i = 0; i < numDisplay; i++)
+            {
+                if (!usedIndices.Contains(i))
+                {
+                    digitTexts[i].text = UnityEngine.Random.Range(0, 10).ToString();
+                }
+            }
+        }
+
         for (int i = 0; i < numOfDigits; i++)
         {
             digitTexts[i].text = correctCode[i].ToString();

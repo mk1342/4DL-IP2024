@@ -1,6 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Models/Lobby_TrafficLobby.fbx.meta
-guid: 76859b89af81eed499b442d07616a75e
+guid: 90e933e5e3a32d44d97bb9b3f6611164
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -10,24 +9,6 @@ ModelImporter:
     materialName: 0
     materialSearch: 1
     materialLocation: 1
-========
-guid: 52ac3f591aa0cad4c960adfcdaa574d3
-timeCreated: 1468387978
-licenseType: Store
-ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Box001
-    4300002: Ball
-  materials:
-    importMaterials: 1
-    materialName: 0
-    materialSearch: 1
->>>>>>>> 964af514e078ea11f6aa01c0d25aefa14c8b265e:Assets/[BFW]SimpleDynamicClouds/Models/ball.FBX.meta
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -35,21 +16,21 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-<<<<<<<< HEAD:Assets/Models/Lobby_TrafficLobby.fbx.meta
     importAnimatedCustomProperties: 0
     importConstraints: 0
-========
->>>>>>>> 964af514e078ea11f6aa01c0d25aefa14c8b265e:Assets/[BFW]SimpleDynamicClouds/Models/ball.FBX.meta
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 0
   meshes:
@@ -57,7 +38,6 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-<<<<<<<< HEAD:Assets/Models/Lobby_TrafficLobby.fbx.meta
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1
@@ -67,15 +47,11 @@ ModelImporter:
     importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
-========
-    importBlendShapes: 1
->>>>>>>> 964af514e078ea11f6aa01c0d25aefa14c8b265e:Assets/[BFW]SimpleDynamicClouds/Models/ball.FBX.meta
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
-<<<<<<<< HEAD:Assets/Models/Lobby_TrafficLobby.fbx.meta
     bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
@@ -84,8 +60,6 @@ ModelImporter:
     optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
-========
->>>>>>>> 964af514e078ea11f6aa01c0d25aefa14c8b265e:Assets/[BFW]SimpleDynamicClouds/Models/ball.FBX.meta
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -94,15 +68,11 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-<<<<<<<< HEAD:Assets/Models/Lobby_TrafficLobby.fbx.meta
     strictVertexDataChecks: 0
-========
->>>>>>>> 964af514e078ea11f6aa01c0d25aefa14c8b265e:Assets/[BFW]SimpleDynamicClouds/Models/ball.FBX.meta
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-<<<<<<<< HEAD:Assets/Models/Lobby_TrafficLobby.fbx.meta
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
@@ -111,11 +81,6 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-========
-  importAnimation: 1
-  copyAvatar: 0
-  humanDescription:
->>>>>>>> 964af514e078ea11f6aa01c0d25aefa14c8b265e:Assets/[BFW]SimpleDynamicClouds/Models/ball.FBX.meta
     human: []
     skeleton: []
     armTwist: 0.5
@@ -128,11 +93,8 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-<<<<<<<< HEAD:Assets/Models/Lobby_TrafficLobby.fbx.meta
     hasExtraRoot: 0
     skeletonHasParents: 1
-========
->>>>>>>> 964af514e078ea11f6aa01c0d25aefa14c8b265e:Assets/[BFW]SimpleDynamicClouds/Models/ball.FBX.meta
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2

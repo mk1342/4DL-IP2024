@@ -5,6 +5,7 @@ using static UnityEngine.EventSystems.StandaloneInputModule;
 using UnityEngine.ProBuilder.Shapes;
 using TMPro;
 using System;
+using System.Linq;
 
 public class Keypad : MonoBehaviour
 {
@@ -13,18 +14,22 @@ public class Keypad : MonoBehaviour
     public int numOfDigits = 4;
     public string correctCode;
     public TextMeshPro[] digitTexts;
-    private int numDisplay;
+    public TextMeshPro coordinateDisplay;
 
+    private int numDisplay;
     private string inputCode = "";
     private AudioSource audioSource;
+    private List<TextMeshPro> displayClone;
     public bool solved = false;
 
-    private List<int> codeDisplayIndices = new List<int>();
-    private List<string> codeCoordinates = new List<string>(); // To store coordinates (or indices) of code digits
+    private List<char> currentDigits;
+    private string coordinates;
     private void Start()
     {
         numDisplay = digitTexts.Length;
         door.SetLock(true);
+        displayClone = digitTexts.ToList();
+        Debug.Log(displayClone);
         if (isRandom)
         {
             GenerateRandomCode();
@@ -40,6 +45,7 @@ public class Keypad : MonoBehaviour
         correctCode = "";
         int randomNumber = UnityEngine.Random.Range((int)Math.Pow(10, numOfDigits-1), (int)Math.Pow(10, numOfDigits));
         correctCode = randomNumber.ToString();
+        currentDigits = new List<char>(correctCode.ToCharArray());
         Debug.Log(correctCode);
     }
 
@@ -48,38 +54,32 @@ public class Keypad : MonoBehaviour
         if (numOfDigits < numDisplay)
         {
             System.Random rand = new System.Random();
-            HashSet<int> usedIndices = new HashSet<int>();
+            int len = numDisplay;
 
             // Assign each digit of the code to a random TextMeshPro display
-            for (int i = 0; i < numOfDigits; i++)
+            for (int i = 0; i < numOfDigits; i++) 
             {
-                int index;
-                do
-                {
-                    index = rand.Next(numDisplay);
-                } while (usedIndices.Contains(index));
-                usedIndices.Add(index);
-                digitTexts[index].text = correctCode[i].ToString();
-                digitTexts[index].color = Color.green;
-
-                // Store the index and coordinates of the assigned digit
-                codeDisplayIndices.Add(index);
-                codeCoordinates.Add("A1"); // Assuming a 6x6 grid
+                int index = UnityEngine.Random.Range(0, len - 1);
+                len -= 1;
+                TextMeshPro textMeshPro = displayClone[index];
+                char c = currentDigits[i];
+                textMeshPro.text = c.ToString();
+                //textMeshPro.color = Color.green;
+                displayClone.Remove(textMeshPro);
+                ComputerText coordinate = textMeshPro.GetComponent<ComputerText>();
+                coordinates += coordinate.coordinate;
+            }
+            for (int i = 0; i < numDisplay-numOfDigits; i++)
+            {
+                int index = UnityEngine.Random.Range(0, len - 1);
+                len -= 1;
+                TextMeshPro textMeshPro = displayClone[index];
+                textMeshPro.text = UnityEngine.Random.Range(0, 9).ToString();
+                displayClone.Remove(textMeshPro);
             }
 
-            // Assign random digits to the remaining TextMeshPro displays
-            for (int i = 0; i < numDisplay; i++)
-            {
-                if (!usedIndices.Contains(i))
-                {
-                    digitTexts[i].text = UnityEngine.Random.Range(0, 10).ToString();
-                }
-            }
-        }
+            coordinateDisplay.text = coordinates;
 
-        for (int i = 0; i < numOfDigits; i++)
-        {
-            digitTexts[i].text = correctCode[i].ToString();
         }
     }
     public void EnterDigit(string digit)

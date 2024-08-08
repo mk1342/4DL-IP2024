@@ -84,7 +84,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -193,7 +193,7 @@ PrefabInstance:
     - target: {fileID: 2586607309129781981, guid: 90e933e5e3a32d44d97bb9b3f6611164, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 498f8afc5c5499640a4ef7945b528ac8, type: 2}
+      objectReference: {fileID: 2100000, guid: d79dc6a41ea2cdc44a88b6a1b65f8fd6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 <<<<<<<< HEAD:Assets/Models/Lobby_TrafficLobby.fbx.meta
+<<<<<<< Updated upstream
 guid: 9ffa8f6bd6d7cb0408306077ad6d0794
+=======
+guid: 88bb704546f063e43a5a8931134651be
+>>>>>>> Stashed changes
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []

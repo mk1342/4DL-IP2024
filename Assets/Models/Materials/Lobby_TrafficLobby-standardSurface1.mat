@@ -17,8 +17,12 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
+<<<<<<< Updated upstream
   stringTagMap:
     RenderType: Opaque
+=======
+  stringTagMap: {}
+>>>>>>> Stashed changes
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -118,7 +122,11 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
+<<<<<<< Updated upstream
 --- !u!114 &3571485647494839176
+=======
+--- !u!114 &974579975997664156
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

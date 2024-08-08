@@ -60,6 +60,7 @@ public class Keypad : MonoBehaviour
                 } while (usedIndices.Contains(index));
                 usedIndices.Add(index);
                 digitTexts[index].text = correctCode[i].ToString();
+                digitTexts[index].color = Color.green;
 
                 // Store the index and coordinates of the assigned digit
                 codeDisplayIndices.Add(index);

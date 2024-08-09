@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
     void CheckForDoor(RaycastHit hit)
     {
         Door door = hit.transform.GetComponentInChildren<Door>();
-        if (door != null && !onCooldown)
+        if (door != null && !onCooldown && !door.autoOpen)
         {
             interactText.enabled = true;
             if (!door.locked)
@@ -154,5 +154,10 @@ public class Player : MonoBehaviour
     {
         messageText.text = message;
         messageText.enabled = true;
+    }
+
+    public void Killed()
+    {
+        Debug.Log("i am dead!");
     }
 }

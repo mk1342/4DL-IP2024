@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 4fe03312d7af0144d87faf2929fd016e
+guid: 9437f0717962f954ca79955a310c8cee
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texatlas
+    second: {fileID: 2100000, guid: 6c59086458a687944ac4cb8c9a70a980, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: 0af1680144badac4a9d6e996493be6bc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -37,7 +47,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1

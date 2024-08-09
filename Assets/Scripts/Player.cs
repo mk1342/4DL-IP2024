@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
     void CheckForDoor(RaycastHit hit)
     {
         Door door = hit.transform.GetComponentInChildren<Door>();
-        if (door != null && !onCooldown)
+        if (door != null && !onCooldown && !door.autoOpen)
         {
             interactText.enabled = true;
             if (!door.locked)

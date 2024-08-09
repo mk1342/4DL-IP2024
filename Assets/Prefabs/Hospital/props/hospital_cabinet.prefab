@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1983474910659948484}
   - component: {fileID: 7050747020405359115}
   - component: {fileID: 3382251960543510825}
+  - component: {fileID: 4359010219910692933}
   m_Layer: 0
   m_Name: hospital_cabinet
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2718848817328320759}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.4696589, y: -0.00000011920929, z: 2.8015602}
   m_LocalScale: {x: 1, y: 1.1802273, z: 1}
   m_ConstrainProportionsScale: 0
@@ -86,6 +87,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4359010219910692933
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2718848817328320759}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8288727186560945486, guid: 83eee276126620c4c9fb7b21888fb4db, type: 3}
 --- !u!1 &2724650714416498213
 GameObject:
   m_ObjectHideFlags: 0

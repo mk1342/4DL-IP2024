@@ -15,12 +15,18 @@ public class Door : MonoBehaviour
     private Quaternion closedRotation;
     private Quaternion openRotation;
     private AudioSource audioSource;
+    private BoxCollider boxCollider;
 
     void Start()
     {
         closedRotation = pivot.transform.rotation;
         openRotation = Quaternion.Euler(pivot.transform.eulerAngles + new Vector3(0, openAngle, 0));
         audioSource = GetComponent<AudioSource>();
+        if (!autoOpen)
+        {
+            boxCollider = GetComponent<BoxCollider>();
+            boxCollider.enabled = false;
+        }
     }
 
     public void Open()
@@ -44,5 +50,13 @@ public class Door : MonoBehaviour
     public void SetLock(bool value)
     {
         locked = value;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Open();
+        }
     }
 }

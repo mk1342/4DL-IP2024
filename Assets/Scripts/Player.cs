@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -71,7 +72,7 @@ public class Player : MonoBehaviour
     void MoveCoilHeads()
     {
         foreach (Enemy enemy in enemies)
-        {   
+        {
             if (!enemiesInSight.Contains(enemy))
             {
                 enemy.SetMovement(true);
@@ -105,7 +106,7 @@ public class Player : MonoBehaviour
                         door.Open();
                         StartCoroutine(ResetCooldown());
                         holdTime = 0f; // Reset the hold time after opening the door
-                         progressBar.gameObject.SetActive(false);
+                        progressBar.gameObject.SetActive(false);
                         interactText.enabled = false;
 
                     }
@@ -147,5 +148,11 @@ public class Player : MonoBehaviour
         onCooldown = true;
         yield return new WaitForSeconds(cooldown);
         onCooldown = false;
+    }
+
+    public void Message(string message, int timer)
+    {
+        messageText.text = message;
+        messageText.enabled = true;
     }
 }

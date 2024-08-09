@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cefc93987e69864fba0b12de3bbd5cc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.183376
+      value: 32.231697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cefc93987e69864fba0b12de3bbd5cc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cefc93987e69864fba0b12de3bbd5cc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 57.55832
+      value: 64.56385
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cefc93987e69864fba0b12de3bbd5cc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -79,6 +79,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -9038585923029775698, guid: 8cefc93987e69864fba0b12de3bbd5cc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 119915262320125575}
+    - targetCorrespondingSourceObject: {fileID: -9038585923029775698, guid: 8cefc93987e69864fba0b12de3bbd5cc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1508091589831140839}
   m_SourcePrefab: {fileID: 100100000, guid: 8cefc93987e69864fba0b12de3bbd5cc, type: 3}
 --- !u!1 &5316552467327740568 stripped
 GameObject:
@@ -86,6 +89,28 @@ GameObject:
   m_PrefabInstance: {fileID: 5429174774158663734}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &119915262320125575
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5316552467327740568}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7857590630482128698, guid: 8cefc93987e69864fba0b12de3bbd5cc, type: 3}
+--- !u!64 &1508091589831140839
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

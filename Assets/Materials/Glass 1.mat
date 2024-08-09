@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glass
+  m_Name: Glass 1
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 2100000, guid: e80f4292dd8282f4fba4a9ce98bf7f7d, type: 2}
   m_ModifiedSerializedProperties: 16
@@ -33,12 +33,12 @@ Material:
     - _DstBlend: 10
     - _DstBlendAlpha: 10
     - _Metallic: 0
-    - _Smoothness: 0.571
+    - _Smoothness: 0.619
     - _Surface: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.60062885, g: 0.82884085, b: 1, a: 0.44313726}
-    - _Color: {r: 0.60062885, g: 0.82884085, b: 1, a: 0.44313726}
+    - _BaseColor: {r: 0.2901981, g: 0.36479372, b: 0.42138356, a: 0.44313726}
+    - _Color: {r: 0.29019806, g: 0.3647937, b: 0.42138353, a: 0.44313726}
   m_BuildTextureStacks: []
 --- !u!114 &8589021412350301450
 MonoBehaviour:

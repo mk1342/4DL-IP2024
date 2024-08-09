@@ -52,8 +52,8 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4459864850019384750}
-  m_Enabled: 0
-  m_CastShadows: 1
+  m_Enabled: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
   crosshair: 1
   crosshairImage: {fileID: 21300000, guid: be4ce60e2c9768c44b9b10b9c5258045, type: 3}
   crosshairColor: {r: 1, g: 1, b: 1, a: 1}
-  enableZoom: 1
+  enableZoom: 0
   holdToZoom: 1
   zoomKey: 324
   zoomFOV: 30
@@ -168,7 +168,7 @@ MonoBehaviour:
   walkSpeed: 4
   maxVelocityChange: 10
   enableSprint: 1
-  unlimitedSprint: 1
+  unlimitedSprint: 0
   sprintKey: 304
   sprintSpeed: 8
   sprintDuration: 5
@@ -180,7 +180,7 @@ MonoBehaviour:
   sprintBarBG: {fileID: 4459864851397454648}
   sprintBar: {fileID: 4459864850888339820}
   sprintBarWidthPercent: 0.3
-  sprintBarHeightPercent: 0.02
+  sprintBarHeightPercent: 0.015
   enableJump: 1
   jumpKey: 32
   jumpPower: 5

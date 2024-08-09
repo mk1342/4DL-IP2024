@@ -9,6 +9,7 @@ public class Door : MonoBehaviour
     public float openAngle = 90f;
     public float openDuration = 1f;
     public bool locked = false;
+    public bool autoOpen = false;
     public Transform pivot;
 
     private Quaternion closedRotation;

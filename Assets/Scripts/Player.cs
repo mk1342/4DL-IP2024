@@ -155,4 +155,9 @@ public class Player : MonoBehaviour
         messageText.text = message;
         messageText.enabled = true;
     }
+
+    public void Killed()
+    {
+        Debug.Log("i am dead!");
+    }
 }

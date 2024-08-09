@@ -1641,7 +1641,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 844
+  m_VersionIndex: 847
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2259,6 +2259,111 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 237464256284827589}
   m_maskType: 0
+--- !u!1 &5563663188734616725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7090768228747953776}
+  - component: {fileID: 5638407466265474537}
+  - component: {fileID: 6113119821558018234}
+  - component: {fileID: 8862070573438128688}
+  m_Layer: 0
+  m_Name: Barrier
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7090768228747953776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563663188734616725}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.0035, y: 0.01141, z: 0.00819}
+  m_LocalScale: {x: 0.0013256572, y: 0.035601646, z: 0.017770994}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6379472745756995702}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5638407466265474537
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563663188734616725}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &6113119821558018234
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563663188734616725}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8862070573438128688
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563663188734616725}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5739458817548019093
 GameObject:
   m_ObjectHideFlags: 0
@@ -4103,6 +4208,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 134bf845a0a79934bb7bf8b4cee64e12, type: 3}
       insertIndex: 1
       addedObject: {fileID: 3216606654994196644}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 134bf845a0a79934bb7bf8b4cee64e12, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7090768228747953776}
     - targetCorrespondingSourceObject: {fileID: 2799827286566760125, guid: 134bf845a0a79934bb7bf8b4cee64e12, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1624569156717458653}
@@ -4153,9 +4261,19 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5119481387631167442}
   m_SourcePrefab: {fileID: 100100000, guid: 134bf845a0a79934bb7bf8b4cee64e12, type: 3}
+--- !u!4 &418389339079280090 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2680588217509653945, guid: 134bf845a0a79934bb7bf8b4cee64e12, type: 3}
+  m_PrefabInstance: {fileID: 6846256299946858397}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3425663365500727443 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1114447966113782002, guid: 134bf845a0a79934bb7bf8b4cee64e12, type: 3}
+  m_PrefabInstance: {fileID: 6846256299946858397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4989112256930451174 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1890996167802607995, guid: 134bf845a0a79934bb7bf8b4cee64e12, type: 3}
   m_PrefabInstance: {fileID: 6846256299946858397}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &4999543760556189432 stripped
@@ -4180,6 +4298,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece0e9e7af02f9a4097f536cd599f0ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LDoor: {fileID: 418389339079280090}
+  RDoor: {fileID: 4989112256930451174}
+  openOnStart: 1
+  button: {fileID: 0}
+  numDisplay: {fileID: 2464726110725080180}
+  arrowDisplay: {fileID: 999027186114142690}
+  currentFloor: 0
+  barrier: {fileID: 5563663188734616725}
+  waitTime: 0
+  isOpen: 0
 --- !u!65 &5119481387631167442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4199,8 +4327,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.026298815, y: 0.035798144, z: 0.01}
-  m_Center: {x: -0.00070105196, y: 0.012899079, z: -6.684699e-18}
+  m_Size: {x: 0.03312162, y: 0.035798144, z: 0.017651072}
+  m_Center: {x: -0.004112463, y: 0.012899079, z: -0.0038255376}
 --- !u!4 &6379472745756995702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 134bf845a0a79934bb7bf8b4cee64e12, type: 3}

@@ -117,6 +117,7 @@ public class Elevator : MonoBehaviour
         RDoor.DOMove(RDoorClosed, duration);
         barrier.GetComponent<BoxCollider>().enabled = true;
         isOpen = false;
+        StartCoroutine(NextFloor());
     }
 
     private void OnTriggerEnter(Collider other)
@@ -125,5 +126,12 @@ public class Elevator : MonoBehaviour
         {
             CloseDoor();
         }
+    }
+
+    private IEnumerator NextFloor()
+    {
+        SceneChanger sceneChanger = FindAnyObjectByType<SceneChanger>();
+        yield return new WaitForSeconds(3);
+        sceneChanger.FadeToBlackAndLoadScene(sceneIndex);
     }
 }

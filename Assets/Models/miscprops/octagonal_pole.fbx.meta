@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 4b60afc148eeb214294b273c2d0cb06c
+guid: 176384a762e5b3741914df3e4ec990d0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface5
+    second: {fileID: 2100000, guid: 74f62eaff566275438f1d62d13a653a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texatlas
+    second: {fileID: 2100000, guid: 0af1680144badac4a9d6e996493be6bc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

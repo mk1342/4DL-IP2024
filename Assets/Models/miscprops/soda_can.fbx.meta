@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 4b60afc148eeb214294b273c2d0cb06c
+guid: 0b0734643a141564cbb48da1327f8e06
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texatlas
+    second: {fileID: 2100000, guid: 0af1680144badac4a9d6e996493be6bc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: standardSurface1
+    second: {fileID: 2100000, guid: 66f64bd93b5fc40419e788983236e8cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: texatlas
     second: {fileID: 2100000, guid: 6c59086458a687944ac4cb8c9a70a980, type: 2}
   materials:

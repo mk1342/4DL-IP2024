@@ -283,6 +283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HospitalFloor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5522111259579140798, guid: 1b8edd70779390044859a650ab65c0b3, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

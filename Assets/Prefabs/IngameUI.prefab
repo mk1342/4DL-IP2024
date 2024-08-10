@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8949034651668242902}
   - component: {fileID: 5431011582299249516}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: InteractText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 1930010827070245625}
   - component: {fileID: 3296796020833504160}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Crosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 7175642839432499509}
   - component: {fileID: 8642754689357690265}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: MessageText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

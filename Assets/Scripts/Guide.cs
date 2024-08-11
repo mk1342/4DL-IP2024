@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -19,11 +20,12 @@ public class Guide : MonoBehaviour
     public float followDistance = 2.0f;
     public float followSpeed = 2.0f;
     public string[] dialogues;
-    private int dialogueIndex = 0;
+    public TMP_FontAsset font;
+    public bool startDialogue;
+    public int timer = 5;
 
     private void Start()
     {
-        // Start in NonExistent state, guide will not appear
         if (currentState == GuideState.NonExistent)
         {
             NonExistent();
@@ -39,7 +41,6 @@ public class Guide : MonoBehaviour
                 break;
 
             case GuideState.Idle:
-                // Idle state logic (guide stands still)
                 break;
 
             case GuideState.Following:
@@ -73,10 +74,20 @@ public class Guide : MonoBehaviour
     {
         if (player != null)
         {
+            // Calculate the target position behind the player
             Vector3 targetPosition = player.position - player.forward * followDistance;
-            targetPosition.y = transform.position.y; // Keep the guide on the same vertical level
-            transform.position = Vector3.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
-            transform.LookAt(player);
+
+            // Set the target position height to the same as the agent's current position
+            targetPosition.y = agent.transform.position.y;
+
+            // Use the NavMeshAgent to move towards the target position
+            agent.speed = followSpeed;
+            agent.SetDestination(targetPosition);
+
+            // Ensure the guide is facing the player while moving
+            Vector3 direction = (player.position - transform.position).normalized;
+            Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * followSpeed);
         }
     }
 
@@ -86,12 +97,10 @@ public class Guide : MonoBehaviour
         {
             // Position the guide in front of the player
             gameObject.SetActive(true);
-            Vector3 appearPosition = player.position + player.forward * 4.0f; // 2.0f is the distance in front of the player
-            appearPosition.y = player.position.y; // Ensure the guide appears at the same height as the player
+            Vector3 appearPosition = player.position + player.forward * 4.0f;
+            appearPosition.y = player.position.y;
             transform.position = appearPosition;
             transform.rotation = Quaternion.LookRotation(player.forward);
-
-            // Set the state to Idle, which will make the guide appear and display a message
             SetState(GuideState.Idle);
         }
     }
@@ -116,12 +125,15 @@ public class Guide : MonoBehaviour
 
     private IEnumerator ShowMessage()
     {
-        if (dialogueIndex < dialogues.Length)
+        if (startDialogue)
         {
-            Player playerS = player.GetComponent<Player>();
-            playerS.Message(dialogues[dialogueIndex], 5);
-            dialogueIndex++;
-            yield return new WaitForSeconds(5);
+            for (int dialogueIndex = 0; dialogueIndex < dialogues.Length; dialogueIndex++)
+            {
+                Player playerS = player.GetComponent<Player>();
+                playerS.Message(dialogues[dialogueIndex], timer, font);
+                yield return new WaitForSeconds(timer + 2 + dialogues[dialogueIndex].Length * 0.05f);
+            }
         }
+        StartFollowing();
     }
 }

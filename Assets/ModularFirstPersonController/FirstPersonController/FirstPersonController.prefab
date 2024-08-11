@@ -208,11 +208,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   viewAngle: 30
   rayCount: 10
-  maxDistance: 10
+  maxDistance: 5
   holdDuration: 0.5
   messageText: {fileID: 0}
   interactText: {fileID: 0}
   progressBar: {fileID: 0}
+  defaultFont: {fileID: 11400000, guid: a405f21ef0531d641a7dc69637901dc2, type: 2}
 --- !u!1 &4459864850190357393
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b2de804d4d99d742be37bfe7078cdef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.880001
+      value: 4.2888975
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b2de804d4d99d742be37bfe7078cdef, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b2de804d4d99d742be37bfe7078cdef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 40.314533
+      value: 26.074532
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b2de804d4d99d742be37bfe7078cdef, type: 3}
       propertyPath: m_LocalRotation.w
@@ -67,7 +67,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 1b2de804d4d99d742be37bfe7078cdef, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 09c143b096937934caaebe8a39a41203, type: 2}
+      objectReference: {fileID: 2100000, guid: adb4de61b664c124b97e7961ea6621df, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b2de804d4d99d742be37bfe7078cdef, type: 3}
       propertyPath: m_Name
       value: Office_CubicleDoor

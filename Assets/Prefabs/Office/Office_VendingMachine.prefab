@@ -67,11 +67,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 2b93388c22bb7f442a2a018243302705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5cd48eb2411dcbb4d8f6f643b31a66f6, type: 2}
+      objectReference: {fileID: 2100000, guid: eadca139b7b4c6a47ae3dceb747b431e, type: 2}
     - target: {fileID: -3985159582367102163, guid: 2b93388c22bb7f442a2a018243302705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 46fd056117c77004481c1af68488b12a, type: 2}
+      objectReference: {fileID: 2100000, guid: 7d6b0e098900fee43b4baa72d167ec4c, type: 2}
     - target: {fileID: 919132149155446097, guid: 2b93388c22bb7f442a2a018243302705, type: 3}
       propertyPath: m_Name
       value: Office_VendingMachine

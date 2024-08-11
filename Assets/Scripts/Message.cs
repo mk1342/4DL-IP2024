@@ -16,7 +16,7 @@ public class Message : MonoBehaviour
             player = other.gameObject.GetComponent<Player>();
             if (!sent || repeatable)
             {
-                player.Message(message, time);
+                player.Message(message, time, null);
                 sent = true;
             }
         }

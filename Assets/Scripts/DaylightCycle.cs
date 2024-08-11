@@ -10,6 +10,9 @@ public class DaylightCycle : MonoBehaviour
     public AnimationCurve lightIntensity; // Curve to control light intensity over time
     public Material skyboxMaterial;     // The skybox material
     public float startTime;
+    public AnimationCurve cloudsIntensity;
+    public Material cloudsLow;
+    public Material cloudsHigh;
 
     private float timeOfDay = 0f;
 
@@ -38,5 +41,11 @@ public class DaylightCycle : MonoBehaviour
             RenderSettings.skybox.SetFloat("_Exposure", lightIntensity.Evaluate(timeOfDay));
             // You can also tweak other properties like _TintColor based on timeOfDay
         }
+        Color colorLow = cloudsLow.GetColor("_Color");
+        colorLow.a = lightIntensity.Evaluate(timeOfDay);
+        cloudsLow.SetColor("_Color", colorLow);
+        Color colorHigh = cloudsHigh.GetColor("_Color");
+        colorHigh.a = lightIntensity.Evaluate(timeOfDay*3);
+        cloudsHigh.SetColor("_Color", colorHigh);
     }
 }

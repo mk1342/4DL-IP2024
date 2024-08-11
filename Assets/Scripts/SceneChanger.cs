@@ -13,7 +13,7 @@ public class SceneChanger : MonoBehaviour
     /// </summary>
     public int sceneIndex;
     public Image fadeImage; // Assign this in the Inspector
-    public float fadeDuration = 1.0f; // Duration of the fade effect
+    public float fadeDuration = 1.5f; // Duration of the fade effect
 
     private void Start()
     {
